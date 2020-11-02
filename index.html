@@ -85,7 +85,7 @@
         var particleOptions = {
           friction: 0.05,
           frictionStatic: 0.1,
-          isStatic: true,
+          // isStatic: true,
           // angle: Math.PI * 0.3,
           render: { visible: true },
         };
@@ -93,65 +93,67 @@
 
         World.add(world, [
           // ここから縦の壁
-          Bodies.rectangle(leftWall, 0, 4000, 20, {
+          Bodies.rectangle(leftWall, 0, 4500, 20, {
             isStatic: true,
             angle: Math.PI * 0.5,
           }),
-          Bodies.rectangle(rightWall, 0, 4000, 20, {
+          Bodies.rectangle(rightWall, 0, 4500, 20, {
             isStatic: true,
             angle: Math.PI * 0.5,
           }),
           // ここまで横の壁
           // topPosition
-
-          Bodies.rectangle(leftWall + 500, topPosition, 600, 20, {
+          Bodies.rectangle(leftWall + 150, topPosition - 250, 400, 20, {
             isStatic: true,
-            angle: Math.PI * 0.1,
+            angle: Math.PI * 0.55,
           }),
-          Composites.softBody(
-            leftWall,
-            topPosition + 30,
-            3,
-            1,
-            0,
-            0,
-            true,
-            18,
-            particleOptions
-          ),
-          Composites.softBody(
-            leftWall,
-            topPosition + 60,
-            5,
-            1,
-            0,
-            0,
-            true,
-            18,
-            particleOptions
-          ),
+          Bodies.rectangle(leftWall + 500, topPosition, 800, 20, {
+            isStatic: true,
+            angle: Math.PI * 0.08,
+          }),
+
           Bodies.rectangle(leftWall + 1500, topPosition + 250, 3000, 20, {
             isStatic: true,
             angle: Math.PI * 0.035,
           }),
-
-          Bodies.rectangle(0, 580, 1500, 20, {
+          Bodies.rectangle(rightWall - 100, topPosition + 500, 300, 20, {
             isStatic: true,
-            angle: Math.PI * 0.04,
+            angle: Math.PI * 0.8,
           }),
-          Bodies.rectangle(700, 780, 1500, 20, {
+
+          Bodies.rectangle(rightWall - 500, topPosition + 800, 300, 20, {
+            isStatic: true,
+            angle: Math.PI * 0.9,
+          }),
+          Bodies.rectangle(leftWall + 300, 1800, 500, 20, {
+            isStatic: true,
+            angle: -Math.PI * 0.2,
+          }),
+          Bodies.rectangle(leftWall + 1700, 1750, 2800, 20, {
             isStatic: true,
             angle: -Math.PI * 0.06,
           }),
           // 下部の受け
-          Bodies.rectangle(rightWall - 100, 1900, 500, 20, {
+          Bodies.rectangle(leftWall + 50, 2150, 200, 20, {
             isStatic: true,
-            angle: -Math.PI * 0.4,
+            angle: -Math.PI * 0.53,
           }),
-          Bodies.rectangle(rightWall - 700, 1900, 500, 20, {
+          Bodies.rectangle(leftWall + 300, 2150, 200, 20, {
             isStatic: true,
-            angle: -Math.PI * 0.79,
+            angle: -Math.PI * 0.35,
           }),
+
+          // Composites.softBody(
+          //   leftWall + 100,
+          //   2050,
+          //   1,
+          //   5,
+          //   0,
+          //   0,
+          //   true,
+          //   18,
+          //   particleOptions
+          // ),
           // ここまで下部の受け
         ]);
 
