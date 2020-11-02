@@ -3,252 +3,224 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>hamon Slider</title>
+    <title>matter-js</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="css/hamon.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="parent">
-      <div class="slider">
-        <button type="button" id="right" class="right" name="button">
-          <svg
-            version="1.1"
-            id="Capa_1"
-            width="40px"
-            height="40px "
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            x="0px"
-            y="0px"
-            viewBox="0 0 477.175 477.175"
-            style="enable-background: new 0 0 477.175 477.175"
-            xml:space="preserve"
-          >
-            <g>
-              <path
-                style="fill: #9d9d9d"
-                d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5
-          c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z
-          "
-              />
-            </g>
-          </svg>
-        </button>
-        <button type="button" id="left" class="left" name="button">
-          <svg
-            version="1.1"
-            id="Capa_2"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            x="0px"
-            y="0px"
-            viewBox="0 0 477.175 477.175"
-            style="enable-background: new 0 0 477.175 477.175"
-            xml:space="preserve"
-          >
-            <g>
-              <path
-                style="fill: #9d9d9d"
-                d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225
-          c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"
-              />
-            </g>
-          </svg>
-        </button>
-        <svg
-          id="svg2"
-          class="up2"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-        >
-          <circle
-            id="circle1"
-            class="circle1 steap"
-            cx="34px"
-            cy="49%"
-            r="20"
-          />
-          <circle
-            id="circle2"
-            class="circle2 steap"
-            cx="34px"
-            cy="49%"
-            r="100"
-          />
-          <circle
-            id="circle3"
-            class="circle3 steap"
-            cx="34px"
-            cy="49%"
-            r="180"
-          />
-          <circle
-            id="circle4"
-            class="circle4 steap"
-            cx="34px"
-            cy="49%"
-            r="260"
-          />
-          <circle
-            id="circle5"
-            class="circle5 steap"
-            cx="34px"
-            cy="49%"
-            r="340"
-          />
-          <circle
-            id="circle6"
-            class="circle6 steap"
-            cx="34px"
-            cy="49%"
-            r="420"
-          />
-          <circle
-            id="circle7"
-            class="circle7 steap"
-            cx="34px"
-            cy="49%"
-            r="500"
-          />
-          <circle
-            id="circle8"
-            class="circle8 steap"
-            cx="34px"
-            cy="49%"
-            r="580"
-          />
-          <circle
-            id="circle9"
-            class="circle9 steap"
-            cx="34px"
-            cy="49%"
-            r="660"
-          />
-        </svg>
-        <svg
-          id="svg1"
-          class="up2"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-        >
-          <circle
-            id="circle10"
-            class="circle10 steap"
-            cx="648px"
-            cy="49%"
-            r="20"
-          />
-          <circle
-            id="circle11"
-            class="circle11 steap"
-            cx="648px"
-            cy="49%"
-            r="100"
-          />
-          <circle
-            id="circle12"
-            class="circle12 steap"
-            cx="648px"
-            cy="49%"
-            r="180"
-          />
-          <circle
-            id="circle13"
-            class="circle13 steap"
-            cx="648px"
-            cy="49%"
-            r="260"
-          />
-          <circle
-            id="circle14"
-            class="circle14 steap"
-            cx="648px"
-            cy="49%"
-            r="340"
-          />
-          <circle
-            id="circle15"
-            class="circle15 steap"
-            cx="648px"
-            cy="49%"
-            r="420"
-          />
-          <circle
-            id="circle16"
-            class="circle16 steap"
-            cx="648px"
-            cy="49%"
-            r="500"
-          />
-          <circle
-            id="circle17"
-            class="circle17 steap"
-            cx="648px"
-            cy="49%"
-            r="580"
-          />
-          <circle
-            id="circle18"
-            class="circle18 steap"
-            cx="648px"
-            cy="49%"
-            r="660"
-          />
-        </svg>
-        <div id="slide1" class="slide1 up1"></div>
-        <div id="slide2" class="slide2"></div>
-        <div id="slide3" class="slide3"></div>
-        <div id="slide4" class="slide4"></div>
-        <div id="slide5" class="slide5"></div>
-        <div id="slide6" class="slide6"></div>
-        <div id="slide7" class="slide7"></div>
-        <div id="slide8" class="slide8"></div>
-        <div id="slide9" class="slide9"></div>
-        <div id="slide10" class="slide10"></div>
-        <div id="slide11" class="slide11"></div>
-        <div id="slide12" class="slide12"></div>
-        <div id="slide13" class="slide13"></div>
-        <div id="slide14" class="slide14"></div>
-        <div id="slide15" class="slide15"></div>
-        <div id="slide16" class="slide16"></div>
-        <div id="slide17" class="slide17"></div>
-        <div id="slide18" class="slide18"></div>
-        <div id="slide19" class="slide19"></div>
-        <div id="slide20" class="slide20"></div>
-        <div id="slide21" class="slide21"></div>
-        <div id="slide22" class="slide22"></div>
-        <div id="slide23" class="slide23"></div>
-        <div id="slide24" class="slide24"></div>
-        <div id="slide25" class="slide25"></div>
-        <div id="slide26" class="slide26"></div>
-        <div id="slide27" class="slide27"></div>
-        <div id="slide28" class="slide28"></div>
-        <div id="slide29" class="slide29"></div>
-        <div id="slide30" class="slide30"></div>
-        <div id="slide31" class="slide31"></div>
-        <div id="slide32" class="slide32"></div>
-        <div id="slide33" class="slide33"></div>
-        <div id="slide34" class="slide34"></div>
-        <div id="slide35" class="slide35"></div>
-        <div id="slide36" class="slide36"></div>
-        <div id="slide37" class="slide37"></div>
-        <div id="slide38" class="slide38"></div>
-        <div id="slide39" class="slide39"></div>
-        <div id="slide40" class="slide40"></div>
-        <div id="slide41" class="slide41"></div>
-        <div id="slide42" class="slide42"></div>
-        <div id="slide43" class="slide43"></div>
-        <div id="slide44" class="slide44"></div>
-        <div id="slide45" class="slide45"></div>
-        <div id="slide46" class="slide46"></div>
-        <div id="slide47" class="slide47"></div>
-        <div id="slide48" class="slide48"></div>
-        <div id="slide49" class="slide49"></div>
-        <div id="slide50" class="slide50"></div>
-      </div>
-    </div>
+    <script src="//cdn.rawgit.com/liabru/matter-js/d727e8601e689a3aeffd386d6ede3a16243563da/build/matter.js"></script>
+    <script src="//cdn.rawgit.com/liabru/matter-tools/d31e212a046b3f8279124aaa43589d27c20d261d/build/matter-tools.demo.js"></script>
+    <script src="//cdn.rawgit.com/liabru/matter-wrap/81b2adf1bb970245f5d964ddda0db71c1ff8aa43/build/matter-wrap.js"></script>
+    <script>
+      var Example = Example || {};
 
-    <script src="hamon-js/hamon.js"></script>
+      Matter.use("matter-wrap");
+
+      Example.avalanche = function () {
+        var Engine = Matter.Engine,
+          Render = Matter.Render,
+          Runner = Matter.Runner,
+          Composite = Matter.Composite,
+          Composites = Matter.Composites,
+          Common = Matter.Common,
+          MouseConstraint = Matter.MouseConstraint,
+          Mouse = Matter.Mouse,
+          World = Matter.World,
+          Bodies = Matter.Bodies;
+
+        // create engine
+        var engine = Engine.create(),
+          world = engine.world;
+
+        // create renderer
+        var render = Render.create({
+          element: document.body,
+          engine: engine,
+          options: {
+            width: 800,
+            height: 1000,
+            wireframes: false,
+            // 目印の追加
+            showAngleIndicator: true,
+            showCollisions: true,
+            showVelocity: true,
+          },
+        });
+
+        Render.run(render);
+
+        // create runner
+        var runner = Runner.create();
+        Runner.run(runner, engine);
+
+        var leftWall = -1500;
+        var rightWall = 1600;
+        var topPosition = -1800;
+
+        var stack = Composites.stack(
+          leftWall,
+          topPosition - 200,
+          2,
+          5,
+          0,
+          0,
+          function (x, y) {
+            return Bodies.circle(x, y, Common.random(30, 30), {
+              friction: 0.00001,
+              restitution: 1,
+              // restitution: 0.5,
+              frictionAir: 0.01,
+              // density: 0.001,
+              portal: -1,
+              // render: {
+              //   strokeStyle: "white",
+              //   fillStyle: "white",
+              // },
+            });
+          }
+        );
+
+        // add bodies
+        var particleOptions = {
+          friction: 0.05,
+          frictionStatic: 0.1,
+          isStatic: true,
+          // angle: Math.PI * 0.3,
+          render: { visible: true },
+        };
+        World.add(world, stack);
+
+        World.add(world, [
+          // ここから縦の壁
+          Bodies.rectangle(leftWall, 0, 4000, 20, {
+            isStatic: true,
+            angle: Math.PI * 0.5,
+          }),
+
+          Bodies.rectangle(rightWall, 0, 4000, 20, {
+            isStatic: true,
+            angle: Math.PI * 0.5,
+          }),
+          // ここまで横の壁
+          // topPosition
+
+          Bodies.rectangle(leftWall + 500, topPosition, 600, 20, {
+            isStatic: true,
+            angle: Math.PI * 0.1,
+          }),
+          Composites.softBody(
+            leftWall,
+            topPosition + 30,
+            3,
+            1,
+            0,
+            0,
+            true,
+            18,
+            particleOptions
+          ),
+          Composites.softBody(
+            leftWall,
+            topPosition + 60,
+            5,
+            1,
+            0,
+            0,
+            true,
+            18,
+            particleOptions
+          ),
+          Bodies.rectangle(leftWall + 1300, topPosition + 250, 2500, 20, {
+            isStatic: true,
+            angle: Math.PI * 0.035,
+          }),
+
+          Bodies.rectangle(0, 580, 1500, 20, {
+            isStatic: true,
+            angle: Math.PI * 0.04,
+          }),
+          Bodies.rectangle(700, 780, 1500, 20, {
+            isStatic: true,
+            angle: -Math.PI * 0.06,
+          }),
+          // 下部の受け
+          Bodies.rectangle(rightWall - 100, 1900, 500, 20, {
+            isStatic: true,
+            angle: -Math.PI * 0.4,
+          }),
+          Bodies.rectangle(rightWall - 700, 1900, 500, 20, {
+            isStatic: true,
+            angle: -Math.PI * 0.79,
+          }),
+          // ここまで下部の受け
+        ]);
+
+        // add mouse control
+        var mouse = Mouse.create(render.canvas),
+          mouseConstraint = MouseConstraint.create(engine, {
+            mouse: mouse,
+            constraint: {
+              stiffness: 0.2,
+              render: {
+                visible: false,
+              },
+            },
+          });
+
+        World.add(world, mouseConstraint);
+
+        // keep the mouse in sync with rendering
+        render.mouse = mouse;
+
+        // fit the render viewport to the scene
+        Render.lookAt(render, Composite.allBodies(world));
+
+        // wrapping using matter-wrap plugin
+        for (var i = 0; i < stack.bodies.length; i += 1) {
+          stack.bodies[i].plugin.wrap = {
+            min: { x: render.bounds.min.x, y: render.bounds.min.y },
+            max: { x: render.bounds.max.x, y: render.bounds.max.y },
+          };
+        }
+
+        // context for MatterTools.Demo
+        return {
+          engine: engine,
+          runner: runner,
+          render: render,
+          canvas: render.canvas,
+          stop: function () {
+            Matter.Render.stop(render);
+            Matter.Runner.stop(runner);
+          },
+        };
+      };
+
+      // create demo interface
+      // not required to use Matter.js
+
+      MatterTools.Demo.create({
+        toolbar: {
+          title: "matter-js",
+          url: "https://github.com/liabru/matter-js",
+          reset: true,
+          source: true,
+          fullscreen: true,
+          exampleSelect: true,
+        },
+        // preventZoom: true,
+        resetOnOrientation: true,
+        examples: [
+          {
+            name: "Avalanche",
+            id: "avalanche",
+            init: Example.avalanche,
+            sourceLink:
+              "https://github.com/liabru/matter-js/blob/master/examples/avalanche.js",
+          },
+        ],
+      });
+    </script>
   </body>
 </html>
