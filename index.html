@@ -61,11 +61,12 @@
         var stack = Composites.stack(
           leftWall,
           topPosition - 200,
-          3,
-          3,
+          4,
+          4,
           0,
           0,
           function (x, y) {
+            // return Bodies.circle(x, y, Common.random(30, 30), {
             return Bodies.circle(x, y, Common.random(30, 30), {
               friction: 0.00001,
               restitution: 1.05,
@@ -93,19 +94,19 @@
 
         World.add(world, [
           // ここから縦の壁
-          Bodies.rectangle(leftWall, 0, 4500, 20, {
+          Bodies.rectangle(leftWall, 0, 5000, 30, {
             isStatic: true,
             angle: Math.PI * 0.5,
           }),
-          Bodies.rectangle(rightWall, 0, 4500, 20, {
+          Bodies.rectangle(rightWall, 0, 5000, 30, {
             isStatic: true,
             angle: Math.PI * 0.5,
           }),
           // ここまで横の壁
           // topPosition
-          Bodies.rectangle(leftWall + 150, topPosition - 250, 400, 20, {
+          Bodies.rectangle(leftWall + 200, topPosition - 250, 400, 20, {
             isStatic: true,
-            angle: Math.PI * 0.55,
+            angle: Math.PI * 0.65,
           }),
           Bodies.rectangle(leftWall + 500, topPosition, 800, 20, {
             isStatic: true,
@@ -115,29 +116,47 @@
           Bodies.rectangle(leftWall + 1500, topPosition + 250, 3000, 20, {
             isStatic: true,
             angle: Math.PI * 0.035,
+            // restitution: 1.35,
           }),
           // ここからバウンド
           Bodies.rectangle(rightWall - 100, topPosition + 600, 300, 20, {
             isStatic: true,
             angle: Math.PI * 0.8,
+            density: 3,
+            restitution: 0.1,
           }),
+          // バウンド手前
           Bodies.rectangle(rightWall - 400, topPosition + 900, 300, 20, {
             isStatic: true,
             angle: Math.PI * 0.94,
+            // restitution: 3,
           }),
-          Bodies.rectangle(rightWall - 800, topPosition + 1000, 300, 20, {
+          Bodies.rectangle(
+            rightWall - 800,
+            topPosition + 900 + 140 * 1,
+            300,
+            20,
+            {
+              isStatic: true,
+              angle: Math.PI * 0.94,
+              // restitution: 3,
+            }
+          ),
+          Bodies.rectangle(
+            rightWall - 1200,
+            topPosition + 900 + 140 * 2,
+            300,
+            20,
+            {
+              isStatic: true,
+              angle: Math.PI * 0.94,
+            }
+          ),
+          Bodies.rectangle(rightWall - 1600, topPosition + 1350, 300, 20, {
             isStatic: true,
             angle: Math.PI * 0.94,
           }),
-          Bodies.rectangle(rightWall - 1200, topPosition + 1100, 300, 20, {
-            isStatic: true,
-            angle: Math.PI * 0.94,
-          }),
-          Bodies.rectangle(rightWall - 1600, topPosition + 1200, 300, 20, {
-            isStatic: true,
-            angle: Math.PI * 0.94,
-          }),
-          Bodies.rectangle(rightWall - 2000, topPosition + 1300, 300, 20, {
+          Bodies.rectangle(rightWall - 2000, topPosition + 1500, 300, 20, {
             isStatic: true,
             angle: Math.PI * 0.94,
           }),
@@ -156,11 +175,11 @@
             angle: -Math.PI * 0.06,
           }),
           // 下部の受け
-          Bodies.rectangle(leftWall + 50, 2150, 200, 20, {
+          Bodies.rectangle(leftWall + 50, 2150, 400, 20, {
             isStatic: true,
-            angle: -Math.PI * 0.53,
+            angle: -Math.PI * 0.65,
           }),
-          Bodies.rectangle(leftWall + 300, 2150, 200, 20, {
+          Bodies.rectangle(leftWall + 300, 2150, 400, 20, {
             isStatic: true,
             angle: -Math.PI * 0.35,
           }),
